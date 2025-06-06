@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6db6aedd15a0748f94de58ad5db2ef2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6db6aedd15a0748f94de58ad5db2ef2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6db6aedd15a0748f94de58ad5db2ef2 = L.map(
+                "map_c6db6aedd15a0748f94de58ad5db2ef2",
+                {
+                    center: [46.5, 2.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a5dcbbbd12cf4ecebecef74e498d0e66 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a5dcbbbd12cf4ecebecef74e498d0e66.addTo(map_c6db6aedd15a0748f94de58ad5db2ef2);
+        
+    
+            var marker_cluster_2c571d1e720cafd8a5852558da8cce45 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_a1643cf43ffb6e648267df670f8fd988 = L.marker(
+                [48.8413634, 2.2530693],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_4e2d8791d3c7ae9358400e93b1bd14bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c4f35c508faae507ec763337621fbc0 = $(`<div id="html_8c4f35c508faae507ec763337621fbc0" style="width: 100.0%; height: 100.0%;">     <b>Paris Saint-Germain</b><br>     Stade : Parc des Princes<br>     Capacité : 47929 places<br>     Entraîneur : Luis Enrique     </div>`)[0];
+                popup_4e2d8791d3c7ae9358400e93b1bd14bf.setContent(html_8c4f35c508faae507ec763337621fbc0);
+            
+        
+
+        marker_a1643cf43ffb6e648267df670f8fd988.bindPopup(popup_4e2d8791d3c7ae9358400e93b1bd14bf)
+        ;
+
+        
+    
+    
+            var marker_b822b486cb970ffb8c8b1ecc13420b6d = L.marker(
+                [45.9951724, 1.0402073],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_794938c321754a1f3387f39bf7ae09d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2112a8cc0566310e3f4281364e1b8676 = $(`<div id="html_2112a8cc0566310e3f4281364e1b8676" style="width: 100.0%; height: 100.0%;">     <b>AS Monaco</b><br>     Stade : Stade Louis-II<br>     Capacité : 16500 places<br>     Entraîneur : Adi Hütter     </div>`)[0];
+                popup_794938c321754a1f3387f39bf7ae09d7.setContent(html_2112a8cc0566310e3f4281364e1b8676);
+            
+        
+
+        marker_b822b486cb970ffb8c8b1ecc13420b6d.bindPopup(popup_794938c321754a1f3387f39bf7ae09d7)
+        ;
+
+        
+    
+    
+            var marker_3966a28f69ec82a097f49029bad56e61 = L.marker(
+                [48.4030422, -4.4613605],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_c3d802aeab231e1d190b18a1492e720a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1edf4961b0b769e7908b8962631691ce = $(`<div id="html_1edf4961b0b769e7908b8962631691ce" style="width: 100.0%; height: 100.0%;">     <b>Stade brestois 29</b><br>     Stade : Stade Francis-Le Blé<br>     Capacité : 15220 places<br>     Entraîneur : Éric Roy     </div>`)[0];
+                popup_c3d802aeab231e1d190b18a1492e720a.setContent(html_1edf4961b0b769e7908b8962631691ce);
+            
+        
+
+        marker_3966a28f69ec82a097f49029bad56e61.bindPopup(popup_c3d802aeab231e1d190b18a1492e720a)
+        ;
+
+        
+    
+    
+            var marker_0578ccf23884d05c3cda9be22e8c6116 = L.marker(
+                [50.6119044, 3.130508],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_4932288e95fe697e5dc69a9a52179cbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef327a7b8e07b20534de41b7cc3d35da = $(`<div id="html_ef327a7b8e07b20534de41b7cc3d35da" style="width: 100.0%; height: 100.0%;">     <b>LOSC Lille</b><br>     Stade : Stade Pierre-Mauroy<br>     Capacité : 50186 places<br>     Entraîneur : Bruno Genesio     </div>`)[0];
+                popup_4932288e95fe697e5dc69a9a52179cbe.setContent(html_ef327a7b8e07b20534de41b7cc3d35da);
+            
+        
+
+        marker_0578ccf23884d05c3cda9be22e8c6116.bindPopup(popup_4932288e95fe697e5dc69a9a52179cbe)
+        ;
+
+        
+    
+    
+            var marker_9924fd5672ecf67aa2fdacb5d8e9611c = L.marker(
+                [43.7051477, 7.1926033],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_142f7314be668c6e656168b42f7caeb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88646a07ece98e7cdd39f13d1af03ff7 = $(`<div id="html_88646a07ece98e7cdd39f13d1af03ff7" style="width: 100.0%; height: 100.0%;">     <b>OGC Nice</b><br>     Stade : Allianz Riviera<br>     Capacité : 35596 places<br>     Entraîneur : Franck Haise     </div>`)[0];
+                popup_142f7314be668c6e656168b42f7caeb0.setContent(html_88646a07ece98e7cdd39f13d1af03ff7);
+            
+        
+
+        marker_9924fd5672ecf67aa2fdacb5d8e9611c.bindPopup(popup_142f7314be668c6e656168b42f7caeb0)
+        ;
+
+        
+    
+    
+            var marker_a0ac5dec52196a5c47658fa7e2ae3e2b = L.marker(
+                [45.7653624, 4.9820543],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_aa1eb3f64d99407686cd1981a8569ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa3e48b45a53556d103144faa376bf61 = $(`<div id="html_fa3e48b45a53556d103144faa376bf61" style="width: 100.0%; height: 100.0%;">     <b>Olympique lyonnais</b><br>     Stade : Groupama Stadium<br>     Capacité : 57206 places<br>     Entraîneur : Paulo Fonseca     </div>`)[0];
+                popup_aa1eb3f64d99407686cd1981a8569ff5.setContent(html_fa3e48b45a53556d103144faa376bf61);
+            
+        
+
+        marker_a0ac5dec52196a5c47658fa7e2ae3e2b.bindPopup(popup_aa1eb3f64d99407686cd1981a8569ff5)
+        ;
+
+        
+    
+    
+            var marker_54b879714bfb59b258063d087e72636a = L.marker(
+                [50.43281, 2.8149878],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_b5bf07ba91d0a82f4b0cbd18c137b8ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f65a49e67612004945401e5c7023de77 = $(`<div id="html_f65a49e67612004945401e5c7023de77" style="width: 100.0%; height: 100.0%;">     <b>RC Lens</b><br>     Stade : Stade Bollaert-Delelis<br>     Capacité : 38223 places<br>     Entraîneur : Will Still     </div>`)[0];
+                popup_b5bf07ba91d0a82f4b0cbd18c137b8ff.setContent(html_f65a49e67612004945401e5c7023de77);
+            
+        
+
+        marker_54b879714bfb59b258063d087e72636a.bindPopup(popup_b5bf07ba91d0a82f4b0cbd18c137b8ff)
+        ;
+
+        
+    
+    
+            var marker_7df49903180f6b056f7fa3b8c55309f5 = L.marker(
+                [43.269835, 5.3959117],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_b5c525eb8431b8d61514cf22ad5db2a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9efc9b6ea2d3e9302e5313fa4a4a78b2 = $(`<div id="html_9efc9b6ea2d3e9302e5313fa4a4a78b2" style="width: 100.0%; height: 100.0%;">     <b>Olympique de Marseille</b><br>     Stade : Orange Vélodrome<br>     Capacité : 66226 places<br>     Entraîneur : Roberto De Zerbi     </div>`)[0];
+                popup_b5c525eb8431b8d61514cf22ad5db2a2.setContent(html_9efc9b6ea2d3e9302e5313fa4a4a78b2);
+            
+        
+
+        marker_7df49903180f6b056f7fa3b8c55309f5.bindPopup(popup_b5c525eb8431b8d61514cf22ad5db2a2)
+        ;
+
+        
+    
+    
+            var marker_13b3d53d84e347efeea7d9da62cb3da1 = L.marker(
+                [49.2470758, 4.0247869],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_ed4e8f2c68f762af47012b58d1b4fba1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_449c645131f798118cf7d7433f1c9afc = $(`<div id="html_449c645131f798118cf7d7433f1c9afc" style="width: 100.0%; height: 100.0%;">     <b>Stade de Reims</b><br>     Stade : Stade Auguste-Delaune<br>     Capacité : 20546 places<br>     Entraîneur : Samba Diawara     </div>`)[0];
+                popup_ed4e8f2c68f762af47012b58d1b4fba1.setContent(html_449c645131f798118cf7d7433f1c9afc);
+            
+        
+
+        marker_13b3d53d84e347efeea7d9da62cb3da1.bindPopup(popup_ed4e8f2c68f762af47012b58d1b4fba1)
+        ;
+
+        
+    
+    
+            var marker_d8a5dab57f3963a71a707bd90d28b7f6 = L.marker(
+                [48.1075655, -1.7126543],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_0a6716a72dd5d2b0a49533f4dffce6e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb640cab2bba94ecd6bf36aa4bb4ed01 = $(`<div id="html_eb640cab2bba94ecd6bf36aa4bb4ed01" style="width: 100.0%; height: 100.0%;">     <b>Stade rennais FC</b><br>     Stade : Roazhon Park<br>     Capacité : 29778 places<br>     Entraîneur : Habib Beye     </div>`)[0];
+                popup_0a6716a72dd5d2b0a49533f4dffce6e2.setContent(html_eb640cab2bba94ecd6bf36aa4bb4ed01);
+            
+        
+
+        marker_d8a5dab57f3963a71a707bd90d28b7f6.bindPopup(popup_0a6716a72dd5d2b0a49533f4dffce6e2)
+        ;
+
+        
+    
+    
+            var marker_e330bf9ef36ab81bf315f5e41d134bd2 = L.marker(
+                [43.5832262, 1.4340638],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_55b55219d12911c7d3ac1ce7b1a246f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd3edc6326ab055b913d3a0e9b74d720 = $(`<div id="html_cd3edc6326ab055b913d3a0e9b74d720" style="width: 100.0%; height: 100.0%;">     <b>Toulouse FC</b><br>     Stade : Stadium de Toulouse<br>     Capacité : 33150 places<br>     Entraîneur : Carles Martínez Novell     </div>`)[0];
+                popup_55b55219d12911c7d3ac1ce7b1a246f4.setContent(html_cd3edc6326ab055b913d3a0e9b74d720);
+            
+        
+
+        marker_e330bf9ef36ab81bf315f5e41d134bd2.bindPopup(popup_55b55219d12911c7d3ac1ce7b1a246f4)
+        ;
+
+        
+    
+    
+            var marker_d1ef9976c554549b282f55871d94a8f7 = L.marker(
+                [43.622022, 3.8120898],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_736761f194b30f237c2fd1c9f03b2a96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69f084453f608ba3fe59d5e6110d3607 = $(`<div id="html_69f084453f608ba3fe59d5e6110d3607" style="width: 100.0%; height: 100.0%;">     <b>Montpellier HSC</b><br>     Stade : Stade de la Mosson<br>     Capacité : 22000 places<br>     Entraîneur : Zoumana Camara     </div>`)[0];
+                popup_736761f194b30f237c2fd1c9f03b2a96.setContent(html_69f084453f608ba3fe59d5e6110d3607);
+            
+        
+
+        marker_d1ef9976c554549b282f55871d94a8f7.bindPopup(popup_736761f194b30f237c2fd1c9f03b2a96)
+        ;
+
+        
+    
+    
+            var marker_7afd86a0ce1f545c0965b3901487355d = L.marker(
+                [48.5600477, 7.7551252],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_22ebdb2c05fa59c0bf385a6ed0aca9f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ae1282858fae9d72129542212aadeba = $(`<div id="html_0ae1282858fae9d72129542212aadeba" style="width: 100.0%; height: 100.0%;">     <b>RC Strasbourg</b><br>     Stade : Stade de la Meinau<br>     Capacité : 26109 places<br>     Entraîneur : Liam Rosenior     </div>`)[0];
+                popup_22ebdb2c05fa59c0bf385a6ed0aca9f9.setContent(html_0ae1282858fae9d72129542212aadeba);
+            
+        
+
+        marker_7afd86a0ce1f545c0965b3901487355d.bindPopup(popup_22ebdb2c05fa59c0bf385a6ed0aca9f9)
+        ;
+
+        
+    
+    
+            var marker_69731786ad9f6c3f025fdbd452b91a40 = L.marker(
+                [47.256005, -1.5247552],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_6931f72cb2d0f77ca4cae2aded95484e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_696e989f88607905bfdce33b13205205 = $(`<div id="html_696e989f88607905bfdce33b13205205" style="width: 100.0%; height: 100.0%;">     <b>FC Nantes</b><br>     Stade : Stade de la Beaujoire<br>     Capacité : 35322 places<br>     Entraîneur : Antoine Kombouaré     </div>`)[0];
+                popup_6931f72cb2d0f77ca4cae2aded95484e.setContent(html_696e989f88607905bfdce33b13205205);
+            
+        
+
+        marker_69731786ad9f6c3f025fdbd452b91a40.bindPopup(popup_6931f72cb2d0f77ca4cae2aded95484e)
+        ;
+
+        
+    
+    
+            var marker_7c7184cbcba5b818488f2bad16b21e7d = L.marker(
+                [49.4987513, 0.1694637],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_4c0ef51e841db5ef07ab2bad1fc3c73c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_190e3a38e5e0f9892b9182327c8dd098 = $(`<div id="html_190e3a38e5e0f9892b9182327c8dd098" style="width: 100.0%; height: 100.0%;">     <b>Le Havre AC</b><br>     Stade : Stade Océane<br>     Capacité : 25178 places<br>     Entraîneur : Didier Digard     </div>`)[0];
+                popup_4c0ef51e841db5ef07ab2bad1fc3c73c.setContent(html_190e3a38e5e0f9892b9182327c8dd098);
+            
+        
+
+        marker_7c7184cbcba5b818488f2bad16b21e7d.bindPopup(popup_4c0ef51e841db5ef07ab2bad1fc3c73c)
+        ;
+
+        
+    
+    
+            var marker_3d2c0fab1cc605cc823a880bf27fcc16 = L.marker(
+                [47.4605516, -0.5306948],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_c53c8fd7da23f142d7d093dde5dc8a2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_daae0683c00647cfa1eaeff682ab860e = $(`<div id="html_daae0683c00647cfa1eaeff682ab860e" style="width: 100.0%; height: 100.0%;">     <b>Angers SCO</b><br>     Stade : Stade Raymond-Kopa<br>     Capacité : 19350 places<br>     Entraîneur : Alexandre Dujeux     </div>`)[0];
+                popup_c53c8fd7da23f142d7d093dde5dc8a2d.setContent(html_daae0683c00647cfa1eaeff682ab860e);
+            
+        
+
+        marker_3d2c0fab1cc605cc823a880bf27fcc16.bindPopup(popup_c53c8fd7da23f142d7d093dde5dc8a2d)
+        ;
+
+        
+    
+    
+            var marker_f26906dbb5e2a51018e40290221a9cb2 = L.marker(
+                [45.4607567, 4.3900932],
+                {
+}
+            ).addTo(marker_cluster_2c571d1e720cafd8a5852558da8cce45);
+        
+    
+        var popup_e4fdec1376e851b2b47fdec426439be9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_649a256b0c8bf7587034659811c69d46 = $(`<div id="html_649a256b0c8bf7587034659811c69d46" style="width: 100.0%; height: 100.0%;">     <b>AS Saint-Étienne</b><br>     Stade : Stade Geoffroy-Guichard<br>     Capacité : 41965 places<br>     Entraîneur : Eirik Horneland     </div>`)[0];
+                popup_e4fdec1376e851b2b47fdec426439be9.setContent(html_649a256b0c8bf7587034659811c69d46);
+            
+        
+
+        marker_f26906dbb5e2a51018e40290221a9cb2.bindPopup(popup_e4fdec1376e851b2b47fdec426439be9)
+        ;
+
+        
+    
+    
+            marker_cluster_2c571d1e720cafd8a5852558da8cce45.addTo(map_c6db6aedd15a0748f94de58ad5db2ef2);
+        
+</script>
+</html>
